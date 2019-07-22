@@ -1,3 +1,39 @@
+Getting Started
+---------------
+
+A workspace is required for AzureML. This is created using
+
+```python
+ws = Workspace.create(name='azml_mlhub_image_classification',
+                      subscription_id='c7bc....2ddb',
+                      resource_group='azml_mlhub_image_classification',
+                      create_resource_group=True,
+                      location='southeastasia'
+                     )
+```
+This will prompt for interactive authentication:
+```console
+Performing interactive authentication. Please follow the instructions on the terminal.
+Note, we have launched a browser for you to login. 
+For old experience with device code, use "az login --use-device-code"
+You have logged in. Now let us find all the subscriptions to which you have access...
+Interactive authentication successfully completed.
+UserWarning: The resource group doesn't exist or was not provided. 
+AzureML SDK is creating a resource
+group=azml_mlhub_image_classification in
+location=southeastasia using subscription=c7bc...2ddb.
+Deploying StorageAccount with name azmlmlhustoragecdiuowsz.
+Deployed StorageAccount with name azmlmlhustoragecdiuowsz.
+Deploying AppInsights with name azmlmlhuinsightsljuocxva.
+Deployed AppInsights with name azmlmlhuinsightsljuocxva.
+Deploying KeyVault with name azmlmlhukeyvaultawijzmvd.
+Deploying ContainerRegistry with name azmlmlhuacryhasweqk.
+Deployed ContainerRegistry with name azmlmlhuacryhasweqk.
+Deployed KeyVault with name azmlmlhukeyvaultawijzmvd.
+Deploying Workspace with name azml_mlhub_image_classification.
+Deployed Workspace with name azml_mlhub_image_classification.
+>>> 
+```
 
 # Contributing
 
