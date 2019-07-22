@@ -3,7 +3,7 @@ meta:
   name         : azml
   title        : Azure Machine Learning.
   keywords     : azure, machine learning, azureml, automl, framework
-  version      : 1.0.0
+  version      : 1.0.1
   languages    : py
   display      : demo
   license      : mit
@@ -16,5 +16,6 @@ dependencies:
     - https://mlhub.ai/empty.txt: private.txt
     - README.md
     - demo.py
+    - .amlignore
 commands:
   demo      : Demonstrate the functionality of the Azure ML cloud framework.
